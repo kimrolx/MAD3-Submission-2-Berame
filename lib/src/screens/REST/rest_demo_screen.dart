@@ -48,10 +48,15 @@ class _RestDemoScreenState extends State<RestDemoScreen> {
         child: ListView(
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
+              child: Center(
+                child: Text(
+                  'REST DEMO',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-              child: Text('Drawer Header'),
             ),
             ListTile(
               title: const Text('Add Post'),
